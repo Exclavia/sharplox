@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>sharplox.ico</ApplicationIcon>
+    <PlatformTarget>x64</PlatformTarget>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <PublishTrimmed>False</PublishTrimmed>
+    <Title>SharpLox</Title>
+    <Authors>Exclavia</Authors>
+    <Description>C# Implementation of Lox.</Description>
+    <PackageIcon>sharplox.png</PackageIcon>
+    <Platforms>AnyCPU;x64</Platforms>
+    <StartupObject>SharpLox.SharpLox</StartupObject>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <NuGetAudit>False</NuGetAudit>
+    <SignAssembly>False</SignAssembly>
+    <Version>1.2.1</Version>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>none</DebugType>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <Deterministic>False</Deterministic>
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <IsPublishable>False</IsPublishable>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="sharplox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="sharplox.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
